@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{75EE26CE-24BF-4B2A-9C77-2BA13487D023}</ProjectGuid>
+    <RootNamespace>VoxelRenderer</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\Code\C++\VoxelRenderer\VoxelRenderer\lib\glew;D:\Code\C++\VoxelRenderer\VoxelRenderer\lib\jpeg;D:\Code\C++\VoxelRenderer\VoxelRenderer\lib\glm;D:\Code\C++\VoxelRenderer\VoxelRenderer\lib\SDL2;D:\Code\C++\VoxelRenderer\VoxelRenderer\lib\STB_image;D:\Code\C++\VoxelRenderer\VoxelRenderer\lib\freetype;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>D:\Code\C++\VoxelRenderer\VoxelRenderer\lib\glew;D:\Code\C++\VoxelRenderer\VoxelRenderer\lib\SDL2;D:\Code\C++\VoxelRenderer\VoxelRenderer\lib\freetype</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32.lib;opengl32.lib;SDL2.lib;SDL2main.lib;freetype27.lib</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <HeapReserveSize>10</HeapReserveSize>
+      <StackReserveSize>10</StackReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\Code\C++\VoxelRenderer\VoxelRenderer\lib\glew;D:\Code\C++\VoxelRenderer\VoxelRenderer\lib\jpeg;D:\Code\C++\VoxelRenderer\VoxelRenderer\lib\glm;D:\Code\C++\VoxelRenderer\VoxelRenderer\lib\SDL2;D:\Code\C++\VoxelRenderer\VoxelRenderer\lib\STB_image;D:\Code\C++\VoxelRenderer\VoxelRenderer\lib\freetype;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>D:\Code\C++\VoxelRenderer\VoxelRenderer\lib\glew;D:\Code\C++\VoxelRenderer\VoxelRenderer\lib\SDL2;D:\Code\C++\VoxelRenderer\VoxelRenderer\lib\freetype</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32.lib;opengl32.lib;SDL2.lib;SDL2main.lib;freetype27.lib</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <HeapReserveSize>10</HeapReserveSize>
+      <StackReserveSize>10</StackReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main\world\boundingVolumes\OOBB.cpp" />
+    <ClCompile Include="src\main\world\planets\terrain\SimplexNoise.cpp" />
+    <ClCompile Include="src\main\world\boundingVolumes\BoundingSphere.cpp" />
+    <ClCompile Include="src\main\world\planets\Chunk.cpp" />
+    <ClCompile Include="src\main\renderer\font\FontRenderer.cpp" />
+    <ClCompile Include="src\main\world\planets\Planet.cpp" />
+    <ClCompile Include="src\main\world\sceneGraph\components\RenderComponent.cpp" />
+    <ClCompile Include="src\main\renderer\RenderingHandler.cpp" />
+    <ClCompile Include="src\main\world\sceneGraph\GameObject.cpp" />
+    <ClCompile Include="src\main\renderer\gui\GuiScreen.cpp" />
+    <ClCompile Include="src\main\renderer\lighting\Light.cpp" />
+    <ClCompile Include="src\main\core\Player.cpp" />
+    <ClCompile Include="src\main\renderer\Camera.cpp" />
+    <ClCompile Include="src\main\InputHandler.cpp" />
+    <ClCompile Include="src\main\world\sceneGraph\components\MeshComponent.cpp" />
+    <ClCompile Include="src\main\renderer\mesh\MeshBuilder.cpp" />
+    <ClCompile Include="src\main\renderer\mesh\Mesh.cpp" />
+    <ClCompile Include="src\main\renderer\Shader.cpp" />
+    <ClCompile Include="src\main\renderer\ShaderProgram.cpp" />
+    <ClCompile Include="src\main\resources\ResourceManager.cpp" />
+    <ClCompile Include="src\main\Engine.cpp" />
+    <ClCompile Include="src\main\Logger.cpp" />
+    <ClCompile Include="src\main\VoxelGame.cpp" />
+    <ClCompile Include="src\main\renderer\WindowHandler.cpp" />
+    <ClCompile Include="src\main\renderer\mesh\Texture.cpp" />
+    <ClCompile Include="src\OpenGLText\OpenGLText.cpp" />
+    <ClCompile Include="src\main\world\planets\terrain\TerrainGenerator.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\main\world\planets\terrain\SimplexNoise.h" />
+    <ClInclude Include="src\main\util\WorldConstants.h" />
+    <ClInclude Include="src\main\world\boundingVolumes\BoundingVolume.h" />
+    <ClInclude Include="src\main\world\planets\Chunk.h" />
+    <ClInclude Include="src\main\renderer\font\FontRenderer.h" />
+    <ClInclude Include="src\main\world\planets\Planet.h" />
+    <ClInclude Include="src\main\world\sceneGraph\components\RenderComponent.h" />
+    <ClInclude Include="src\main\renderer\RenderingHandler.h" />
+    <ClInclude Include="src\main\world\sceneGraph\SceneGraph.h" />
+    <ClInclude Include="src\main\renderer\gui\GuiScreen.h" />
+    <ClInclude Include="src\main\renderer\lighting\Light.h" />
+    <ClInclude Include="src\main\core\Player.h" />
+    <ClInclude Include="src\main\renderer\Camera.h" />
+    <ClInclude Include="src\main\InputHandler.h" />
+    <ClInclude Include="lib\glm\glm\gtc\bitfield.hpp" />
+    <ClInclude Include="lib\glm\glm\gtc\color_space.hpp" />
+    <ClInclude Include="lib\glm\glm\gtc\functions.hpp" />
+    <ClInclude Include="lib\glm\glm\gtc\integer.hpp" />
+    <ClInclude Include="lib\glm\glm\gtc\round.hpp" />
+    <ClInclude Include="lib\glm\glm\gtc\type_aligned.hpp" />
+    <ClInclude Include="lib\glm\glm\gtc\vec1.hpp" />
+    <ClInclude Include="lib\glm\glm\gtx\common.hpp" />
+    <ClInclude Include="lib\glm\glm\gtx\extended_min_max.hpp" />
+    <ClInclude Include="lib\glm\glm\gtx\hash.hpp" />
+    <ClInclude Include="lib\glm\glm\gtx\matrix_decompose.hpp" />
+    <ClInclude Include="lib\glm\glm\gtx\range.hpp" />
+    <ClInclude Include="lib\glm\glm\gtx\scalar_multiplication.hpp" />
+    <ClInclude Include="lib\glm\glm\gtx\type_aligned.hpp" />
+    <ClInclude Include="lib\glm\glm\gtx\type_trait.hpp" />
+    <ClInclude Include="lib\glm\glm\simd\common.h" />
+    <ClInclude Include="lib\glm\glm\simd\exponential.h" />
+    <ClInclude Include="lib\glm\glm\simd\geometric.h" />
+    <ClInclude Include="lib\glm\glm\simd\integer.h" />
+    <ClInclude Include="lib\glm\glm\simd\matrix.h" />
+    <ClInclude Include="lib\glm\glm\simd\packing.h" />
+    <ClInclude Include="lib\glm\glm\simd\platform.h" />
+    <ClInclude Include="lib\glm\glm\simd\trigonometric.h" />
+    <ClInclude Include="lib\glm\glm\simd\vector_relational.h" />
+    <ClInclude Include="src\main\world\sceneGraph\components\MeshComponent.h" />
+    <ClInclude Include="src\main\renderer\mesh\MeshBuilder.h" />
+    <ClInclude Include="src\main\renderer\mesh\Mesh.h" />
+    <ClInclude Include="src\main\renderer\Shader.h" />
+    <ClInclude Include="src\main\renderer\ShaderProgram.h" />
+    <ClInclude Include="src\main\resources\ResourceManager.h" />
+    <ClInclude Include="src\main\Engine.h" />
+    <ClInclude Include="src\main\ConsoleColor.h" />
+    <ClInclude Include="src\main\VoxelGame.h" />
+    <ClInclude Include="src\main\Logger.h" />
+    <ClInclude Include="src\main\renderer\WindowHandler.h" />
+    <ClInclude Include="src\main\renderer\mesh\Texture.h" />
+    <ClInclude Include="src\OpenGLText\opengltext.h" />
+    <ClInclude Include="src\OpenGLText\tga.h" />
+    <ClInclude Include="src\main\world\planets\terrain\TerrainGenerator.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lib\glm\glm\detail\func_common_simd.inl" />
+    <None Include="lib\glm\glm\detail\func_exponential_simd.inl" />
+    <None Include="lib\glm\glm\detail\func_geometric_simd.inl" />
+    <None Include="lib\glm\glm\detail\func_integer_simd.inl" />
+    <None Include="lib\glm\glm\detail\func_matrix_simd.inl" />
+    <None Include="lib\glm\glm\detail\func_packing_simd.inl" />
+    <None Include="lib\glm\glm\detail\func_trigonometric_simd.inl" />
+    <None Include="lib\glm\glm\detail\func_vector_relational_simd.inl" />
+    <None Include="lib\glm\glm\detail\type_mat4x4_simd.inl" />
+    <None Include="lib\glm\glm\detail\type_vec4_simd.inl" />
+    <None Include="lib\glm\glm\gtc\bitfield.inl" />
+    <None Include="lib\glm\glm\gtc\color_encoding.inl" />
+    <None Include="lib\glm\glm\gtc\color_space.inl" />
+    <None Include="lib\glm\glm\gtc\functions.inl" />
+    <None Include="lib\glm\glm\gtc\integer.inl" />
+    <None Include="lib\glm\glm\gtc\quaternion_simd.inl" />
+    <None Include="lib\glm\glm\gtc\round.inl" />
+    <None Include="lib\glm\glm\gtc\vec1.inl" />
+    <None Include="lib\glm\glm\gtx\common.inl" />
+    <None Include="lib\glm\glm\gtx\extended_min_max.inl" />
+    <None Include="lib\glm\glm\gtx\float_notmalize.inl" />
+    <None Include="lib\glm\glm\gtx\hash.inl" />
+    <None Include="lib\glm\glm\gtx\matrix_decompose.inl" />
+    <None Include="lib\glm\glm\gtx\type_aligned.inl" />
+    <None Include="lib\glm\glm\gtx\type_trait.inl" />
+    <None Include="res\shaders\voxelRenderer\FragmentShader.glsl" />
+    <None Include="res\shaders\voxelRenderer\VertexShader.glsl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
