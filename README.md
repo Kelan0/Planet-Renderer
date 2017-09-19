@@ -20,4 +20,4 @@ Some screenshots of all of this in action.
 ![Atmospheric scattering on terrain](https://i.imgur.com/qYBPh5P.png)
 
 ## Installing
-To run this, you can either clone the entire repository and run the visual studio project files (which I haven't tested. This may not work propery), or you can run the executable in the `VoxelRenderer (Runnable)` folder.
+To run this, you can either clone the entire repository and run the visual studio project files (which I haven't tested. This may not work propery), or you can run the executable in the `VoxelRenderer (Runnable)` folder. This will likely not run on older versions of OpenGL. This was made using OpenGL 4.0.
