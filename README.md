@@ -9,7 +9,7 @@ Some of the most notable features that this rendering engine achieves include:
 - Terrain generation using 3D simplex noise. The terrain colours are calculated per-vertex based on altitude. Vertices below an altitude of 0m will be blue for water, and above a certain height they are white for snow, etc. This is not a very realistic way of colouring the terrain. I plan to implement texture splatting so that the terrain chunks can actually have proper textures rather than vertex colours.
 - Logarithmic depth buffer to be able to handle the massive ranges of mesh sizes for an entire planet. When the player is far away from the planet, it is actually about 1 OpenGL unit accross, but as the player gets closer, the planet symultaneously moves further away from the player and gets larger, so that it has the same apparent size to the player. When it gets larger, some depth buffer precision issues start to happen, which a logarithmic buffer solves.
 
-##Images
+## Images
 Some screenshots of all of this in action.
 ![Planet from space](https://i.imgur.com/LmLxO4c.png)
 ![High altitude atmospheric scattering](https://i.imgur.com/NZerOcx.png)
