@@ -1,5 +1,5 @@
 # Planet Render
-This is a simple rendering engine I made to render a full-scale planet that the player can land one and explore from anywhere. This is a project I worked on for about 3 months in 2016. The project was named `Voxel Renderer` because I originally planned for the terrain to be made of voxels and to be editable, but this ended up not happening due to complications with storing voxels on a spherical planet.
+This is a rendering engine I made to render a full-scale planet that the player can land one and explore from anywhere. This is a project I worked on for about 3 months in 2016. The project was named `Voxel Renderer` because I originally planned for the terrain to be made of voxels and to be editable, but this ended up not happening due to complications with storing voxels on a spherical planet.
 
 ### Features
 Some of the most notable features that this rendering engine achieves include:
