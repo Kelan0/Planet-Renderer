@@ -14,7 +14,7 @@ Some screenshots of all of this in action.
 ![Planet from space](https://i.imgur.com/LmLxO4c.png)
 ![High altitude atmospheric scattering](https://i.imgur.com/NZerOcx.png)
 ![Terrain mesh and LOD](https://i.imgur.com/u5rmT3a.png)
-!Frustum culling](https://i.imgur.com/LSc0Oyc.png)
+![Frustum culling](https://i.imgur.com/LSc0Oyc.png)
 ![More tmospheric scattering](https://i.imgur.com/4OHl4lr.png)
 ![Terrain generation](https://i.imgur.com/dkzZRQw.png)
 ![Atmospheric scattering on terrain](https://i.imgur.com/qYBPh5P.png)
